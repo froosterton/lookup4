@@ -1,10 +1,10 @@
 {
-  "name": "rolimons-scraper3",
+  "name": "rolimons-scraper4",
   "version": "1.0.0",
   "description": "Rolimons scraper that finds Discord usernames",
-  "main": "scrapper3.js",
+  "main": "scrapper4.js",
   "scripts": {
-    "start": "node scrapper3.js"
+    "start": "node scrapper4.js"
   },
   "keywords": [
     "scraper",
