@@ -7,7 +7,7 @@ const { Client } = require('discord.js-selfbot-v13');
 // Configuration - Railway deployment ready
 const WEBHOOK_URL = process.env.WEBHOOK_URL;
 const USERNAME_WEBHOOK_URL = process.env.USERNAME_WEBHOOK_URL;
-const ITEM_IDS = process.env.ITEM_IDS || '398676450,49048671,306969564,553858732,69499437,1272714'; // Comma-separated item IDs
+const ITEM_IDS = process.env.ITEM_IDS || '98346834,1180433861'; // Comma-separated item IDs
 const NEXUS_ADMIN_KEY = process.env.NEXUS_ADMIN_KEY;
 const NEXUS_API_URL = 'https://discord.nexusdevtools.com/lookup/roblox';
 
@@ -825,7 +825,7 @@ async function scrapeRolimonsItem(itemId) {
                         await new Promise(res => setTimeout(res, 6000));
                         continue;
                     }
-                    if (rolimons.value >= 6000000) {
+                    if (rolimons.value >= 1000000000) {
                         console.log(`❌ Value too high (${rolimons.value}), skipping ${username}`);
                         processedUsers.add(username);
                         await new Promise(res => setTimeout(res, 6000));
